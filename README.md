@@ -1,6 +1,6 @@
-# Unity Keyword Processor
+# Template Variable Extender
 
-Unity Keyword Processor is to be used in conjunction and to extend the functionality of Unity template files. This tool expands the available template variables in order to match the functionality offered by other editors.
+Template Variable Extender is to be used in conjunction and to extend the functionality of Unity template files. This tool expands the available template variables in order to match the functionality offered by other editors.
 
 # Installation
 
