@@ -17,9 +17,9 @@ namespace editor.keyword.processors {
       var targetNamespaceEntities = assetInfo.FilePathEntities
         .SkipLast(1) // remove filename
         .Reverse() // reverse so that going up the tree
-        .TakeWhile(filename => !filename.Equals(AssetsKeyword)) // take all directories until reach Assets
+        .TakeWhile(filename => !filename.Equals(AssetsKeyword, StringComparison.OrdinalIgnoreCase)) // take all directories until reach Assets
         .Reverse() // reverse again to regain order
-        .Where(filename => !NamespaceExclusions.Contains(filename)); // remove invalid namespace directories
+        .Where(filename => !NamespaceExclusions.Contains(filename, StringComparer.CurrentCultureIgnoreCase)); // remove invalid namespace directories
 
       return string.Join(NamespaceSeparator, targetNamespaceEntities);
     }
