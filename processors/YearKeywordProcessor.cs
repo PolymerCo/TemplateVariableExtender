@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace editor.keyword.processors {
+namespace Keyword.Processors {
   public class YearKeywordProcessor : KeywordProcessor {
     public YearKeywordProcessor() : base("YEAR") { }
     

@@ -1,10 +1,10 @@
 using System.IO;
 using System.Linq;
-using editor.keyword.processors;
+using Keyword.Processors;
 using UnityEditor;
 using UnityEngine;
 
-namespace editor.keyword {
+namespace Keyword {
   internal sealed class ScriptKeywordProcessor : AssetModificationProcessor {
     // string that identifies a file as a meta file.
     private const string MetaIdentifier = ".meta";

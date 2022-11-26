@@ -1,6 +1,7 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 
-namespace editor.keyword.processors {
+namespace Keyword.Processors {
   public class NamespaceKeywordProcessor : KeywordProcessor {
     /** Keyword to identity the Assets directory. */
     private const string AssetsKeyword = "Assets";

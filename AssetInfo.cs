@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Linq;
 
-namespace editor.keyword {
+namespace Keyword {
   public sealed class AssetInfo {
     /** Temp filename associated with keyword processor temp files. */
     private const string TempExtension = "kwdtmp";

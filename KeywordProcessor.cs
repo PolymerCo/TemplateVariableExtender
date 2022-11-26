@@ -1,5 +1,7 @@
 ﻿
-namespace editor.keyword {
+using System;
+
+namespace Keyword {
   public abstract class KeywordProcessor {
     /** Wrapper for the keywords. */
     private const char KeywordWrapper = '#';
