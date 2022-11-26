@@ -10,7 +10,7 @@ namespace editor.keyword {
     private const string MetaIdentifier = ".meta";
 
     // Extensions that this processor should act upon.
-    private static readonly string[] ValidExtensions = { ".cs", ".js", ".txt", ".shader" };
+    private static readonly string[] ValidExtensions = { ".cs", ".txt", ".shader", ".compute", ".asmdef", ".raytrace" };
 
     // active keyword processors.
     private static readonly KeywordProcessor[] KeywordProcessors = {
