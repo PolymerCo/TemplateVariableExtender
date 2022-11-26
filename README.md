@@ -36,7 +36,7 @@ Below are the current in-built variables, examples, and use:
 | `NAMESPACE` | `script.path` | The scripts' namespace based on it's path.<sup>1</sup> |
 | `YEAR` | `2022` | The current year. |
 
-<sup>1</sup> the namespace will include all directories after the root `Assets` directory, excluding a number of keywords including: `scripts`, `src` <sup>2</sup>. For example, the file `Project/Assets/Scripts/World/Editor/WorldEditor.cs` will produce the namespace `World.Editor`.
+<sup>1</sup> the namespace will include all directories after the root `Assets` directory, excluding a number of keywords including: `scripts`, `src` <sup>2</sup>. For example, the file `Project/Assets/Scripts/World/Viewer/WorldViewer.cs` will produce the namespace `World.Viewer`.
 
 <sup>2</sup> the excluded directories can be altered by editing the `Processors.NamespaceKeywordProcessor.NamespaceExclusions` array.
 
