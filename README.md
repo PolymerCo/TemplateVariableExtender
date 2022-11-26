@@ -1,5 +1,6 @@
-# UnityKeywordProcessor
-Unity Keyword Processor to be used in conjunction and to extend the functionality of Unity template files
+# Unity Keyword Processor
+
+Unity Keyword Processor to be used in conjunction and to extend the functionality of Unity template files. This tool expands the available template variables in order to match the functionality offered by other editors.
 
 # Installation
 
@@ -20,6 +21,8 @@ git clone https://github.com/PolymerCo/UnityKeywordProcessor.git
 # Creating Templates
 
 To create new script templates, create text files within the `Assets/ScriptTemplates` directory (you will have to create this directory yourself). In here, you can create new templates or override existing ones. You can see the already existent templates within your editor's data directory `{EditorPath}\Data\Resources\ScriptTemplates`.
+
+It is also possible to modify/create new templates within the editor's data directory, however this may not be desired as it makes collaboration more difficult. 
 
 For example, if you were to want to overwrite the default NewBehaviourScript template, as of Unity 2022.1.21f1 the following directory structure can be used:
 
