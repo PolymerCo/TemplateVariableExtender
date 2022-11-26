@@ -9,7 +9,7 @@ namespace editor.keyword.processors {
     private const string NamespaceSeparator = ".";
       
     /** Words to exclude from the namespace. */
-    private static readonly string[] NamespaceExclusions = { "scripts", "src" };
+    private static readonly string[] NamespaceExclusions = { "scripts", "src", "editor" };
     
     public NamespaceKeywordProcessor() : base("NAMESPACE") { }
     
