@@ -32,8 +32,6 @@ For example, if you were to want to overwrite the default NewBehaviourScript tem
 
 # Available Variables
 
-Below are the current in-built variables, examples, and use:
-
 | Variable           | Example                    | Description                                            |
 |:-------------------|:---------------------------|:-------------------------------------------------------|
 | `COPY`             | `©`                        | Copyright symbol.                                      |
