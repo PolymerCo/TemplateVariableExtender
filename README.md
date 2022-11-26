@@ -5,7 +5,7 @@ Unity Keyword Processor to be used in conjunction and to extend the functionalit
 
 Clone the git repository into your `Assets` folder. It is preferred that you clone this within the `editor` directory within your project, however it can be placed anywhere without issue.
 
-Example file strucutre:
+Example file structure:
 
 - `Assets`
   - `editor`
@@ -19,7 +19,7 @@ git clone https://github.com/PolymerCo/UnityKeywordProcessor.git
 
 # Creating Templates
 
-To create new script templates, create text files within the `Assets/ScriptTemplates` directory (you will have to create this directory yourself). In here, you can create new templates or override existing ones. You can see the already existant templates within your editor's data directory `{EditorPath}\Data\Resources\ScriptTemplates`.
+To create new script templates, create text files within the `Assets/ScriptTemplates` directory (you will have to create this directory yourself). In here, you can create new templates or override existing ones. You can see the already existent templates within your editor's data directory `{EditorPath}\Data\Resources\ScriptTemplates`.
 
 For example, if you were to want to overwrite the default NewBehaviourScript template, as of Unity 2022.1.21f1 the following directory structure can be used:
 
