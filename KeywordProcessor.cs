@@ -12,7 +12,7 @@ namespace editor.keyword {
     }
     
     public string Process(AssetInfo assetInfo, string line) {
-      return line.Contains(_keyword) ? line.Replace(_keyword, ProcessExecutor(assetInfo)) : line;
+      return line.Contains(_keyword, StringComparison.OrdinalIgnoreCase) ? line.Replace(_keyword, ProcessExecutor(assetInfo)) : line;
     }
 
     protected abstract string ProcessExecutor(AssetInfo assetInfo);
