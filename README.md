@@ -30,7 +30,7 @@ For example, if you were to want to overwrite the default NewBehaviourScript tem
   - `ScriptTemplates`
     - `81-C# Script-NewBehaviourScript.cs`
 
-# In-built Variables
+# Available Variables
 
 Below are the current in-built variables, examples, and use:
 
