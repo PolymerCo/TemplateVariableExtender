@@ -14,17 +14,22 @@ namespace Keyword {
 
     // active keyword processors.
     private static readonly KeywordProcessor[] KeywordProcessors = {
+      new CloudProjectIdProcessor(),
+      new CompanyProcessor(),
       new CopyrightProcessor(),
       new DateProcessor(),
       new DayProcessor(),
       new DirPathProcessor(),
+      new ExtensionProcessor(),
       new FileNameProcessor(),
+      new FileNameFullProcessor(),
       new HourProcessor(),
       new MinuteProcessor(),
       new MonthNameFullProcessor(),
       new MonthNameShortProcessor(),
       new MonthProcessor(),
       new NamespaceProcessor(),
+      new PlatformProcessor(),
       new ProductNameProcessor(),
       new ProductVersionProcessor(),
       new ProjectNameProcessor(),
