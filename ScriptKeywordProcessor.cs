@@ -14,8 +14,24 @@ namespace Keyword {
 
     // active keyword processors.
     private static readonly KeywordProcessor[] KeywordProcessors = {
-      new NamespaceKeywordProcessor(),
-      new YearKeywordProcessor()
+      new CopyrightProcessor(),
+      new DateProcessor(),
+      new DayProcessor(),
+      new DirPathProcessor(),
+      new FileNameProcessor(),
+      new HourProcessor(),
+      new MinuteProcessor(),
+      new MonthNameFullProcessor(),
+      new MonthNameShortProcessor(),
+      new MonthProcessor(),
+      new NamespaceProcessor(),
+      new ProductNameProcessor(),
+      new ProductVersionProcessor(),
+      new ProjectNameProcessor(),
+      new SecondProcessor(),
+      new TimeProcessor(),
+      new UserProcessor(),
+      new YearProcessor()
     };
 
     private static void OnWillCreateAsset(string assetName) {
