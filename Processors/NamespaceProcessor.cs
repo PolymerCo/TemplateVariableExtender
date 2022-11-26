@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using UnityEngine;
 
 namespace Keyword.Processors {
   public class NamespaceProcessor : KeywordProcessor {
@@ -12,11 +13,9 @@ namespace Keyword.Processors {
     public NamespaceProcessor() : base("NAMESPACE") { }
     
     protected override string ProcessExecutor(AssetInfo assetInfo) {
-      var targetNamespaceEntities = assetInfo.FilePathEntities
+      var targetNamespaceEntities = assetInfo.RelativeFilePathEntities
         .SkipLast(1) // remove filename
-        .Reverse() // reverse so that going up the tree
-        .TakeWhile(filename => !filename.Equals(Constants.AssetsKeyword, StringComparison.OrdinalIgnoreCase)) // take all directories until reach Assets
-        .Reverse() // reverse again to regain order
+        .Skip(1)
         .Where(filename => !NamespaceExclusions.Contains(filename, StringComparer.CurrentCultureIgnoreCase)); // remove invalid namespace directories
 
       return string.Join(NamespaceSeparator, targetNamespaceEntities);
