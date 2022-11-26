@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace Keyword {
+namespace TemplateVariableExtender {
   public abstract class KeywordProcessor {
     /** Wrapper for the keywords. */
     private const char KeywordWrapper = '#';

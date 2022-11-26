@@ -1,4 +1,4 @@
-﻿namespace Keyword.Processors {
+﻿namespace TemplateVariableExtender.Processors {
   public class ExtensionProcessor : KeywordProcessor {
     public ExtensionProcessor() : base("EXTENSION") { }
     

@@ -1,8 +1,8 @@
 ﻿using System.IO;
 using System.Linq;
-using Keyword.Processors;
+using TemplateVariableExtender.Processors;
 
-namespace Keyword {
+namespace TemplateVariableExtender {
   public sealed class AssetInfo {
     /** Temp filename associated with keyword processor temp files. */
     private const string TempExtension = "kwdtmp";

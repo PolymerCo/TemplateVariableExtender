@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace Keyword.Processors {
+namespace TemplateVariableExtender.Processors {
   public static class Constants {
     public static readonly char[] DirectorySeparator = {
       Path.DirectorySeparatorChar,

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Keyword.Processors {
+namespace TemplateVariableExtender.Processors {
   public class ProductVersionProcessor : KeywordProcessor {
     public ProductVersionProcessor() : base("PRODUCT_VERSION") { }
     

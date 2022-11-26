@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Linq;
-using UnityEngine;
 
-namespace Keyword.Processors {
+namespace TemplateVariableExtender.Processors {
   public class NamespaceProcessor : KeywordProcessor {
     /** Separator used for namespaces. */
     private const string NamespaceSeparator = ".";

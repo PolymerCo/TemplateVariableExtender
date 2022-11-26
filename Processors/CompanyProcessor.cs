@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Keyword.Processors {
+namespace TemplateVariableExtender.Processors {
   public class CompanyProcessor : KeywordProcessor {
     public CompanyProcessor() : base("COMPANY") { }
     

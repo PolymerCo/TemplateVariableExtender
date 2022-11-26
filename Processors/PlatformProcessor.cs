@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Keyword.Processors {
+namespace TemplateVariableExtender.Processors {
   public class PlatformProcessor : KeywordProcessor {
     public PlatformProcessor() : base("PLATFORM") { }
     

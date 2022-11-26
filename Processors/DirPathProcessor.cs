@@ -1,4 +1,4 @@
-﻿namespace Keyword.Processors {
+﻿namespace TemplateVariableExtender.Processors {
   public class DirPathProcessor : KeywordProcessor {
     public DirPathProcessor() : base("DIR_PATH") { }
     

@@ -1,10 +1,10 @@
 using System.IO;
 using System.Linq;
-using Keyword.Processors;
+using TemplateVariableExtender.Processors;
 using UnityEditor;
 using UnityEngine;
 
-namespace Keyword {
+namespace TemplateVariableExtender {
   internal sealed class ScriptKeywordProcessor : AssetModificationProcessor {
     // string that identifies a file as a meta file.
     private const string MetaIdentifier = ".meta";

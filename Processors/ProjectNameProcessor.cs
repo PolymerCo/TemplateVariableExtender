@@ -1,7 +1,6 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Keyword.Processors {
+namespace TemplateVariableExtender.Processors {
   public class ProjectNameProcessor : KeywordProcessor {
     public ProjectNameProcessor() : base("PROJECT_NAME") { }
     

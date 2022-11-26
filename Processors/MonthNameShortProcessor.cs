@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Keyword.Processors {
+namespace TemplateVariableExtender.Processors {
   public class MonthNameShortProcessor : KeywordProcessor {
     public MonthNameShortProcessor() : base("MONTH_NAME_SHORT") { }
     

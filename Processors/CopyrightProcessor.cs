@@ -1,4 +1,4 @@
-﻿namespace Keyword.Processors {
+﻿namespace TemplateVariableExtender.Processors {
   public class CopyrightProcessor : KeywordProcessor {
     public CopyrightProcessor() : base("COPY") { }
     

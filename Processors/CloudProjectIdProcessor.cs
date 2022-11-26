@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Keyword.Processors {
+namespace TemplateVariableExtender.Processors {
   public class CloudProjectIdProcessor : KeywordProcessor {
     public CloudProjectIdProcessor() : base("CLOUD_PROJECT_ID") { }
     

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Keyword.Processors {
+namespace TemplateVariableExtender.Processors {
   public class DateProcessor : KeywordProcessor {
     public DateProcessor() : base("DATE") { }
     

@@ -1,4 +1,4 @@
-﻿namespace Keyword.Processors {
+﻿namespace TemplateVariableExtender.Processors {
   public class FileNameProcessor : KeywordProcessor {
     public FileNameProcessor() : base("FILE_NAME") { }
     

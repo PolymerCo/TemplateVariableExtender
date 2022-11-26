@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Keyword.Processors {
+namespace TemplateVariableExtender.Processors {
   public class HourProcessor : KeywordProcessor {
     public HourProcessor() : base("HOUR") { }
     
