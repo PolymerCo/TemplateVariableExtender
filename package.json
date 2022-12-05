@@ -1,0 +1,14 @@
+{
+	"name": "com.polymerco.template-variable-extender",
+	"version": "1.0.0",
+	"displayName":"Template Variable Extender",
+	"description": "Used in conjunction and to extend the functionality of Unity template files - expanding the available variables to match the functionality of other editors.",
+	"keywords": [
+		"Asset Management",
+		"Code Template", 
+		"Editor Extension",
+		"Templates",
+		"Tooling",
+		"Tools"
+	]
+}
