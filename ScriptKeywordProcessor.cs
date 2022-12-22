@@ -1,8 +1,8 @@
+using System;
 using System.IO;
 using System.Linq;
 using TemplateVariableExtender.Processors;
 using UnityEditor;
-using UnityEngine;
 
 namespace TemplateVariableExtender {
   internal sealed class ScriptKeywordProcessor : AssetModificationProcessor {
@@ -40,25 +40,25 @@ namespace TemplateVariableExtender {
     };
 
     private static void OnWillCreateAsset(string assetName) {
+      // If not a .meta file, ignore
+      if (!assetName.Contains(MetaIdentifier)) return;
+
       // Remove meta extension if present
       assetName = assetName.Replace(MetaIdentifier, "");
 
-      var assetInfo = new AssetInfo(assetName);
-      
+      var assetInfo = AssetInfo.FromAssetName(assetName);
+
       // if invalid extension, ignore
-      if (!ValidExtensions.Contains(assetInfo.FileExtension)) {
-        return;
-      }
-      
+      if (!ValidExtensions.Contains(assetInfo.FileExtension)) return;
+
       // if target file does not exist, write warning
-      if (!File.Exists(assetInfo.FilePath)) {
-        Debug.LogWarning($"Templating failure on asset {assetName}: non-meta file does not exist.");
-      }
-      
+      if (!File.Exists(assetInfo.FilePath))
+        throw new Exception($"Templating failure on asset {assetName}: non-meta file does not exist.");
+
+
       // if temp file already exists, write warning
-      if (File.Exists(assetInfo.TempFilePath)) {
-        Debug.LogWarning($"Templating failure on asset {assetName}: temporary file already exists.");
-      }
+      if (File.Exists(assetInfo.TempFilePath))
+        throw new Exception($"Templating failure on asset {assetName}: temporary file already exists.");
 
       // create read and write streams
       using (var input = File.OpenText(assetInfo.FilePath))
@@ -74,10 +74,10 @@ namespace TemplateVariableExtender {
           line = input.ReadLine();
         }
       }
-      
+
       // move temp file to final file location
       File.Replace(assetInfo.TempFilePath, assetInfo.FilePath, null);
-      
+
       AssetDatabase.Refresh();
     }
   }

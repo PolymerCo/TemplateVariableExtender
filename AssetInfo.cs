@@ -4,37 +4,12 @@ using TemplateVariableExtender.Processors;
 
 namespace TemplateVariableExtender {
   public sealed class AssetInfo {
-    /** Temp filename associated with keyword processor temp files. */
+    /**
+     * Temp filename associated with keyword processor temp files.
+     */
     private const string TempExtension = "kwdtmp";
-    
-    /** Name of the asset as provided by Unity. */
-    public string Name { get; }
-    
-    /* The full path of the asset file. */
-    public string FilePath { get; }
-    
-    /** List of path entities. */
-    public string[] FilePathEntities { get; }
-    
-    /* List of path entities, relative to the project root. */
-    public string[] RelativeFilePathEntities { get; }
-    
-    /** The full path to the asset's parent directory. */
-    public string ParentFilePath { get; }
-    
-    /** Filename of the asset. */
-    public string FileName { get; }
-    
-    /** Filename of the asset, including the extension. */
-    public string FullFileName { get; }
-    
-    /** File extension of the asset. */
-    public string FileExtension { get; }
-    
-    /** Temporary file path when processing this asset. */
-    public string TempFilePath { get; }
 
-    public AssetInfo(string assetName) {
+    private AssetInfo(string assetName) {
       Name = assetName;
       FilePath = Path.GetFullPath(assetName);
       FilePathEntities = FilePath.Split(Constants.DirectorySeparator);
@@ -44,6 +19,54 @@ namespace TemplateVariableExtender {
       FullFileName = Path.GetFileName(FilePath);
       FileExtension = Path.GetExtension(FilePath);
       TempFilePath = $"{ParentFilePath}{Constants.DirectorySeparator}.{FullFileName}.{TempExtension}";
+    }
+
+    /**
+     * Name of the asset as provided by Unity.
+     */
+    public string Name { get; }
+
+    /* The full path of the asset file. */
+    public string FilePath { get; }
+
+    /**
+     * List of path entities.
+     */
+    public string[] FilePathEntities { get; }
+
+    /* List of path entities, relative to the project root. */
+    public string[] RelativeFilePathEntities { get; }
+
+    /**
+     * The full path to the asset's parent directory.
+     */
+    public string ParentFilePath { get; }
+
+    /**
+     * Filename of the asset.
+     */
+    public string FileName { get; }
+
+    /**
+     * Filename of the asset, including the extension.
+     */
+    public string FullFileName { get; }
+
+    /**
+     * File extension of the asset.
+     */
+    public string FileExtension { get; }
+
+    /**
+     * Temporary file path when processing this asset.
+     */
+    public string TempFilePath { get; }
+
+    /**
+     * Generate a new `AssetInfo` object from the asset name.
+     */
+    public static AssetInfo FromAssetName(string assetName) {
+      return new AssetInfo(assetName);
     }
   }
 }
