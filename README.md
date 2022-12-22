@@ -33,14 +33,9 @@ For example, if you were to want to overwrite the default NewBehaviourScript tem
 following directory structure can be used:
 
 - `Assets`
-<<<<<<< HEAD
-    - `ScriptTemplates`
-        - `81-C# Script-NewBehaviourScript.cs`
-=======
   - `ScriptTemplates`
     - `81-C# Script-NewBehaviourScript.cs.txt`
->>>>>>> e37629da35b56d284ded5dddbcd9efacc375ba27
-
+    
 # Available Variables
 
 | Variable           | Example                    | Description                                            |
