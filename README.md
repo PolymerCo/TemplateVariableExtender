@@ -28,7 +28,7 @@ For example, if you were to want to overwrite the default NewBehaviourScript tem
 
 - `Assets`
   - `ScriptTemplates`
-    - `81-C# Script-NewBehaviourScript.cs`
+    - `81-C# Script-NewBehaviourScript.cs.txt`
 
 # Available Variables
 
